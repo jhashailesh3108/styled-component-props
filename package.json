@@ -1,5 +1,9 @@
 {
+<<<<<<< HEAD
   "name": "styled-props",
+=======
+  "name": "styled-components-props",
+>>>>>>> [#0] Shailesh | added styled-component-props
   "version": "1.0.0",
   "description": "A simple utility to manage styled-component props",
   "main": "dist/index.js",
@@ -12,6 +16,13 @@
     "styled-component",
     "styled-props"
   ],
+<<<<<<< HEAD
+=======
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jhashailesh3108/styled-component-props.git"
+  },
+>>>>>>> [#0] Shailesh | added styled-component-props
   "author": "shailesh kumar jha",
   "license": "ISC",
   "devDependencies": {
@@ -21,5 +32,10 @@
     "ts-jest": "^25.2.1",
     "typescript": "^3.8.3"
   },
+<<<<<<< HEAD
   "types": "dist/index.d.ts"
+=======
+  "types": "dist/index.d.ts",
+  "dependencies": {}
+>>>>>>> [#0] Shailesh | added styled-component-props
 }
