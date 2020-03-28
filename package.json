@@ -1,6 +1,6 @@
 {
   "name": "styled-components-props",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "A simple utility to manage styled-component props",
   "main": "dist/index.js",
   "scripts": {
