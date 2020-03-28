@@ -10,6 +10,7 @@ yarn add styled-component-props
 
 **How to use**
 
+
 1. Pass direct props
 
   ```javascript
@@ -56,28 +57,27 @@ yarn add styled-component-props
   <StyledParagraph customColor="danger" >My red paragraph</StyledParagraph>
 
 ```
-
 3. Pass default value in case you don't want fallback.
 
-    **Note :** default has least priority. In case you have provided fallback with default it will first check for fallback and then retun default value if fallback doen't match.
+  **Note :** default has least priority. In case you have provided fallback with default it will first check for fallback and then retun default value if fallback doen't match.
 
-```javascript
-  import styled from 'styled-component';
-  import styledProps from 'styled-component-props';
+  ```javascript
+    import styled from 'styled-component';
+    import styledProps from 'styled-component-props';
 
-  const colors = {
-    default: "white",
-    danger: "red",
-    warning: "orange"
-  };
+    const colors = {
+      default: "white",
+      danger: "red",
+      warning: "orange"
+    };
 
-  // default value will be #ff0 if fall back and props doesn't matches with any of the colors property.
+    // default value will be #ff0 if fall back and props doesn't matches with any of the colors property.
 
-  const StyledParagraph = styled.p`
-    color: ${ styledProps(colors, {fallback: "secondary", variant: "customColor", default: "#ff0" })};
-    font-size: 1rem;
-  `;
+    const StyledParagraph = styled.p`
+      color: ${ styledProps(colors, {fallback: "secondary", variant: "customColor", default: "#ff0" })};
+      font-size: 1rem;
+    `;
 
-  // use it as
-  <StyledParagraph customColor="info" >My red paragraph</StyledParagraph>
-```
+    // use it as
+    <StyledParagraph customColor="info" >My red paragraph</StyledParagraph>
+  ```
