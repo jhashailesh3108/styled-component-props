@@ -27,4 +27,12 @@ describe('styled-props', () => {
     expect(styledProps(colorProps)(props)).toBe(undefined);
     expect(styledProps(colorProps, {fallback: "default", variant: "color"})(props)).toBe("red");
   });
-})
+
+  it('should give the default value if fallback and props does not match with any value', () => {
+    //  <Component color="danger" | "warning" | "success" | etc  />
+    const props = {color: "timberColor"};
+    expect(styledProps(colorProps)(props)).toBe(undefined);
+    expect(styledProps(colorProps, {fallback: "another", variant: "color", default:"#ff0"})(props)).toBe("#ff0");
+    expect(styledProps(colorProps, {variant: "color", default:"#ff0"})(props)).toBe("#ff0");
+  });
+});
