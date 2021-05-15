@@ -1,11 +1,11 @@
 # styled-component-props
 
 ```javascript
-npm install styled-component-props
+npm install styled-components-props
 ```
 
 ```javascript
-yarn add styled-component-props
+yarn add styled-components-props
 ```
 
 **How to use**
